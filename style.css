@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: lightgrey;
+    padding: 5px;
+    font-family: 'Karla', sans-serif;
+}
+ /* Dark grey with a blueish tint */
+ /* Light grey with a silver-like tone */
+
+
+main {
+    margin-top: 15%;
+    background-color: #bfbfbf;
+    height: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    //margin-top: 20px;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 0;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.dice-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 15px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    //border-style: dotted;
+    width: 800px;
+    height: 1200px;   
+}
+
+img {
+    height: 320px;
+    width: 320px;
+    margin: 15px;
+}
+
+
+.die-face {
+    padding-top:5px;
+    height: 350px;
+    width:350px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pinter;
+}
+.revealorNo {
+    padding-top: 5px;
+    margin-top: 5px;
+    display: grid;
+    grid-template: auto auto / repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 10px;
+    //border-style:dotted;
+    text-align: center;
+}
+
+
+
+
+.nearlydie-face {
+        padding-top:5px;
+    height: 140px;
+    width:140px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.roll-dice {
+    height: 80px;
+    width: 250px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.7rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.bottomStuff {
+    color: blue;
+    //border-style: dotted;
+    margin: 15px;
+    font-size: 38px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #FF6464;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #FF4D4D;
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  
