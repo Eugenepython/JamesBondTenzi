@@ -1,21 +1,26 @@
+const path = require('path');
+
 module.exports = {
+  entry: {
+    index: './index.js'
+  },
   output: {
-    filename: "[name].pack.js"
+    filename: '[name].pack.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
-        query: {
-          presets: ["env", "react"],
-          plugins: ["transform-object-rest-spread"]
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['transform-object-rest-spread']
+          }
         }
       }
     ]
-  },
-  entry: {
-    index: "./index.js"
   }
 };
